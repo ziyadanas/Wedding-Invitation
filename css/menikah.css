@@ -1,3 +1,31 @@
+@media only screen
+	and (max-device-width: 767px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-size: contain; /* Adjust background size for iOS devices */
+    }
+}
+
+@media only screen 
+    and (min-device-width: 768px) /* Minimum width for iPad portrait */
+    and (max-device-width: 1024px) /* Maximum width for iPad landscape */
+    and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        background-size: contain; /* Adjust background size for iPads */
+    }
+}
+
+/* Additional media query for iPad Pro devices (adjust as needed) */
+@media only screen 
+    and (min-device-width: 1024px) /* Minimum width for iPad Pro portrait */
+    and (max-device-width: 1366px) /* Maximum width for iPad Pro landscape */
+    and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        background-size: contain; /* Adjust background size for iPad Pro */
+    }
+}
+
+
 .has-vertically-aligned-content {
   display: flex;
   flex-direction: column;
@@ -46,11 +74,6 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background-size: contain; /* Adjust background size for iOS devices */
-    }
-}
 
 .hero .title {
   font-family: 'Rouge Script', sans-serif;
