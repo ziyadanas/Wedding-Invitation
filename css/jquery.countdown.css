@@ -1,4 +1,4 @@
-ul#hitungmundur {
+ul#countdown {
 	list-style: none;
 	margin: 30px 0;
 	padding: 0;
@@ -6,20 +6,20 @@ ul#hitungmundur {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 }
-ul#hitungmundur li {
+ul#countdown li {
 	display: inline-block;
 }
-ul#hitungmundur li span {
+ul#countdown li span {
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 30px;
 }
-ul#hitungmundur li.separator {
+ul#countdown li.separator {
 	font-size: 30px;
 	line-height: 25px;
 	vertical-align: top;
 }
-ul#hitungmundur li p {
+ul#countdown li p {
 	color: #fff;
 	font-size: 16px;
 }

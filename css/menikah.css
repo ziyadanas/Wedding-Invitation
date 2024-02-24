@@ -46,7 +46,11 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-size: contain; /* Adjust background size for iOS devices */
+    }
+}
 
 .hero .title {
   font-family: 'Rouge Script', sans-serif;
@@ -63,7 +67,7 @@ html {
   font-size: 1.3rem;
 }
 
-.hero .tempatwaktu {
+.hero .placetime {
   padding-top: 35px;
   font-size: 1.3rem;
   
@@ -318,7 +322,7 @@ vertical-align: middle;
   font-size: 18px;
 }
 
-.waktu {
+.time {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
 }
@@ -458,10 +462,10 @@ body.preloader-site {
 
 .btn-whatsapp:hover {
   color: white;
-  background-color: #59a543;
+  background-color: #bf7877;
   font-size: 1.2rem;
   border-radius: 10px;
-  border: 2px solid #59a543;
+  border: 2px solid #bf7877;
   width:  210px;
   height: 65px;
   align-items: center;
@@ -470,16 +474,13 @@ body.preloader-site {
 
 
 .btn-whatsapp {
-  background-color: #6cc751;
+  background-color: #996E6D;
   width:  210px;
   height: 65px;
   color: white;
   font-size: 1.2rem;
   border-radius: 10px;  
-  border-left: 1px solid #6cc751;
-  border-right: 1px solid #6cc751;
-  border-top: 1px solid #6cc751;
-  border-bottom: 1px solid #6cc751;
+  border: 2px solid ##996E6D;
   align-items: center;
   margin: 1rem;
 

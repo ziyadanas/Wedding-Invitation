@@ -54,10 +54,16 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Jemputan Perkahwinan</h1>
-            <h2 class="title">Nurkhalifah</br>&</br>Ziyad</h2>
-            <h4 class="subtitle tempatwaktu">
-              
+            
+			<h1 class="subtitle">
+				Jemputan Perkahwinan
+			</h1>
+            
+			<h2 class="title">
+				Nurkhalifah</br>&</br>Ziyad
+			</h2>
+			
+            <h4 class="subtitle placetime">
                 Ahad, 29 September 2024 
                 </br>
                 Taman Desa Pabahanan 
@@ -68,7 +74,7 @@
           </div>
           <!-- Start Countdown -->       
           <div>
-            <ul id="hitungmundur" >
+            <ul id="countdown" >
               <li><span class="days">00</span><p class="days_text">Hari</p></li>
               <li class="separator">:</li>
               <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
@@ -88,7 +94,7 @@
               var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
               var harih = '09/29/2024 09:00:00';
 
-              $('#hitungmundur').countdown({
+              $('#countdown').countdown({
                 date: harih, // TODO Date format: 07/27/2017 17:00:00
                 offset: +7, // TODO Your Timezone Offset
                 day: 'Hari',
@@ -119,7 +125,7 @@
                     <a href="#Jemputan">Jemputan</a>
                   </li>
                   <li>
-                    <a href="#Waktu">Masa</a>
+                    <a href="#time">Masa</a>
                   </li>
                   <li>
                     <a href="#lokasi">Lokasi</a>
@@ -196,8 +202,8 @@
       </section>
       <!-- End regular-section-->    
       
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
+      <!-- Begin Masa Section -->
+      <section class="section-dark" id="time">
         <div class="container">
 
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
@@ -208,15 +214,15 @@
               class="column is-4 has-vertically-aligned-content">
             
               <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Ahad</div> 
-                  <div class="waktu tanggal-angka has-text-centered">29</div>
-                  <div class="waktu tanggal-bulan has-text-centered">September 2024</div>
+                  <div class="time tanggal-hari has-text-centered">Ahad</div> 
+                  <div class="time tanggal-angka has-text-centered">29</div>
+                  <div class="time tanggal-bulan has-text-centered">September 2024</div>
               </p>
             
             </div>
 			
             <div class="column is-4 has-vertically-aligned-content">
-              <p class="waktu is-larger has-text-centered">
+              <p class="time is-larger has-text-centered">
                 Jamuan Makan:
                 <br>
                 <strong>9.00 pagi - 12.00 tengahari</strong>
@@ -226,7 +232,7 @@
 
             <div class="column is-4 has-vertically-aligned-content">
               
-              <h1 class="waktu is-larger has-text-centered">
+              <h1 class="time is-larger has-text-centered">
                 Bersanding:
 				<br>
                 <strong>11.00 pagi</strong>
@@ -239,13 +245,13 @@
         </div>
         <div class="space40px"></div>
         <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+          <a href="https://www.google.com/calendar/event?action=TEMPLATE&dates=20240929T090000/20240929T140000&text=Majlis%20Perkahwinan%20Nurkhalifah%20dan%20Ziyad&location=https://maps.app.goo.gl/JnUMoCqT7NmsdK5Z6&ctz=Asia/Kuala_Lumpur" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
             <i class="far fa-calendar-plus"></i>
             &nbsp;&nbsp;Google Calendar
           </a>
         </div>
       </section>
-      <!-- End Waktu Content -->
+      <!-- End Masa Content -->
 
       <!-- Begin Lokasi Section -->
       <section class="section-darker" id="lokasi" >
@@ -267,7 +273,7 @@
           </div>
           <div class="space40px"></div>
           <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.app.goo.gl/oynCut5jgvXBivQW6" class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <a href="https://maps.app.goo.gl/JnUMoCqT7NmsdK5Z6" class="button btn-cta" target="_blank" data-aos="zoom-in">
               <i class="far fa-directions"></i>
               &nbsp;&nbsp;Google Maps
             </a>
@@ -309,33 +315,20 @@
      
               <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Sherly,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari Sherly
+                &nbsp;&nbsp; Nazri
               </a>
-              
-
           
               <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari Daeng
+                &nbsp;&nbsp; Idrus
               </a >
+			  
+              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp; Hadi
+              </a >
+			  
               <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png?raw=true" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                <a class="instagram":" href="https://instagram.com/nengchely" target="_blank" alt="Instagram Sherly">
-                  <i class="fab fa-instagram"></i> @
-                </a>
-                &nbsp
-                <a class="instagram" href="https://instagram.com/zazahari_" target="_blank" alt="Instagram Daeng">
-                  <i class="fab fa-instagram"></i> @zazahari_
-                </a>
-              </p>
 
             </div>
  
