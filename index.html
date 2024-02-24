@@ -49,101 +49,103 @@
     <!-- End Preloader-->
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            
-			<h1 class="subtitle">
-				Jemputan Perkahwinan
-			</h1>
-            
-			<h2 class="title">
-				Nurkhalifah</br>&</br>Ziyad
-			</h2>
+		<!-- Begin Hero -->
+		<section class="hero is-large">
+			<!-- Begin Hero Content-->
+			<div class="hero-body">
+				<div class="container has-text-centered">
+				
+					<h1 class="subtitle">
+						Jemputan Perkahwinan
+					</h1>
+					
+					<h2 class="title">
+						Nurkhalifah</br>&</br>Ziyad
+					</h2>
+					
+					<h4 class="subtitle placetime">
+						Ahad, 29 September 2024 
+						</br>
+						Taman Desa Pabahanan 
+						</br>
+						Limbang Sarawak
+					</h4>
+				</div>
+				<!-- Start Countdown -->       
+				<div>
+					<ul id="countdown" >
+						<li><span class="days">00</span><p class="days_text">Hari</p></li>
+						<li class="separator">:</li>
+						<li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+						<li class="separator">:</li>
+						<li><span class="minutes">00</span><p class="minutes_text">Minit</p></li>
+						<li class="separator">:</li>
+						<li><span class="seconds">00</span><p class="seconds_text">Saat</p></li>
+					</ul>
+
+					<script type="text/javascript">
+						var now = new Date();
+						var day = now.getDate();
+						var month = now.getMonth() + 1;
+						var year = now.getFullYear() + 1;
+
+						var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+						var harih = '09/29/2024 09:00:00';
+
+						$('#countdown').countdown({
+							date: harih, // TODO Date format: 07/27/2017 17:00:00
+							offset: +7, // TODO Your Timezone Offset
+							day: 'Hari',
+							days: 'Hari',
+							hour: 'Jam',
+							hours: 'Jam',
+							minute: 'Minit',
+							minutes: 'Minit',
+							second: 'Saat',
+							seconds: 'Saat'
+						});
+					</script>  
+			  <!-- End Countdown -->
+				</div>
+			</div>
+			<!-- End Hero Content-->
 			
-            <h4 class="subtitle placetime">
-                Ahad, 29 September 2024 
-                </br>
-                Taman Desa Pabahanan 
-                </br>
-                Limbang Sarawak
+			<!-- Begin Hero Menu -->
+			<div class="hero-foot ">
+				<div class="hero-foot--wrapper">
+					<div class="columns">
+						<div class="column is-12 hero-menu-desktop has-text-centered">
+							<ul>
+								<!--<li class="is-active">
+									<a href="#home">Utama</a>
+								</li>-->
+								
+								<li class="is-active">
+									<a href="#Jemputan">Jemputan</a>
+								</li>
+								
+								<li>
+									<a href="#time">Masa</a>
+								</li>
+								
+								<li>
+									<a href="#lokasi">Lokasi</a>
+								</li>
+								
+								<!--<li>
+									<a href="#tentang-sherly-daeng">Tentang Sherly & Daeng</a>
+								</li>-->
 
-            </h4>
-          </div>
-          <!-- Start Countdown -->       
-		<div>
-            <ul id="countdown" >
-				<li><span class="days">00</span><p class="days_text">Hari</p></li>
-				<li class="separator">:</li>
-				<li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-				<li class="separator">:</li>
-				<li><span class="minutes">00</span><p class="minutes_text">Minit</p></li>
-				<li class="separator">:</li>
-				<li><span class="seconds">00</span><p class="seconds_text">Saat</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-				var now = new Date();
-				var day = now.getDate();
-				var month = now.getMonth() + 1;
-				var year = now.getFullYear() + 1;
-
-				var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-				var harih = '09/29/2024 09:00:00';
-
-				$('#countdown').countdown({
-					date: harih, // TODO Date format: 07/27/2017 17:00:00
-					offset: +7, // TODO Your Timezone Offset
-					day: 'Hari',
-					days: 'Hari',
-					hour: 'Jam',
-					hours: 'Jam',
-					minute: 'Minit',
-					minutes: 'Minit',
-					second: 'Saat',
-					seconds: 'Saat'
-				});
-            </script>  
-		</div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-		
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <!--<li class="is-active">
-                    <a href="#home">Utama</a>
-                  </li>-->
-                  <li class="is-active">
-                    <a href="#Jemputan">Jemputan</a>
-                  </li>
-                  <li>
-                    <a href="#time">Masa</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">Lokasi</a>
-                  </li>
-                  <!--<li>
-                    <a href="#tentang-sherly-daeng">Tentang Sherly & Daeng</a>
-                  </li>-->
-
-                  <li>
-                    <a href="#rsvp">Hubungi</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+								<li>
+								<a href="#rsvp">Hubungi</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
         <!-- End Hero Menu -->
-      </section>
+		</section>
       <!-- End Hero -->
     </div>
     <!-- End Header -->
