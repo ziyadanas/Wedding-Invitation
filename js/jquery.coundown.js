@@ -13,10 +13,10 @@
 			days: 'Hari',
 			hour: 'Jam',
 			hours: 'Jam',
-			minute: 'Menit',
-			minutes: 'Menit',
-			second: 'Detik',
-			seconds: 'Detik'
+			minute: 'Minit',
+			minutes: 'Minit',
+			second: 'Saat',
+			seconds: 'Saat'
 		}, options);
 
 		// Throw error if date is not set

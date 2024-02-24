@@ -1,6 +1,6 @@
 .hero {
   background-image: url(https://picsum.photos/id/25/1920/1080);
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/island.png") no-repeat;
+  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/windows_island.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -12,7 +12,8 @@
 	and (max-device-width: 767px)
 	and (-webkit-min-device-pixel-ratio: 2) {
     .hero {
-        background-size: contain; /* Adjust background size for iOS devices */
+		background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ios_island.png") no-repeat;
+        background-size: cover; /* Adjust background size for iOS devices */
     }
 }
 
@@ -21,7 +22,8 @@
     and (max-device-width: 1024px) /* Maximum width for iPad landscape */
     and (-webkit-min-device-pixel-ratio: 1) {
     .hero {
-        background-size: contain; /* Adjust background size for iPads */
+		background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png") no-repeat;
+        background-size: cover; /* Adjust background size for iPads */
     }
 }
 
@@ -31,7 +33,8 @@
     and (max-device-width: 1366px) /* Maximum width for iPad Pro landscape */
     and (-webkit-min-device-pixel-ratio: 1) {
     .hero {
-        background-size: contain; /* Adjust background size for iPad Pro */
+		background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png") no-repeat;
+        background-size: cover; /* Adjust background size for iPad Pro */
     }
 }
 
