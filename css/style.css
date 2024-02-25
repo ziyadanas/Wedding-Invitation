@@ -5,7 +5,7 @@
 		and (-webkit-min-device-pixel-ratio: 2) {
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
-			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/sland.png");
+			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ios_sland.png");
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -20,7 +20,7 @@
 		and (-webkit-min-device-pixel-ratio: 1) {
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
-			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/island.png");
+			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: center;			
@@ -35,8 +35,8 @@
 		and (-webkit-min-device-pixel-ratio: 1) {
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
-			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/island.png");
-			background-size: cover;
+			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
+			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: center;
 			color: white;
@@ -102,8 +102,8 @@ html {
 	font-family: 'Rouge Script', sans-serif;
 	font-weight: 700;
 	transform: rotate(-2deg);
-	font-size: 5rem;
-	padding-bottom: 5px;
+	font-size: 4rem;
+	padding-bottom: 3px;
 	color: whitesmoke;
 }
 
