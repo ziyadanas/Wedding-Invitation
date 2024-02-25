@@ -6,7 +6,7 @@
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
 			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ios_sland.png");
-			background-size: 100% auto;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 			color: white;
@@ -21,7 +21,7 @@
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
 			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
-			background-size: 100% auto;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;			
 			color: white;
@@ -36,7 +36,7 @@
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
 			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
-			background-size: 100% auto;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 			color: white;
@@ -50,6 +50,7 @@
 @supports not (-webkit-touch-callout: none) {
 	/* CSS for other than iOS devices */
 	.hero {
+		background-image: url(https://picsum.photos/id/25/1920/1080);
 		background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/island.png");
 		background-attachment: fixed;
 		background-size: cover;
