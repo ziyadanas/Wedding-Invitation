@@ -79,6 +79,10 @@
 	box-sizing: border-box;
 }
 
+audio {
+	/*display: none;*/
+}
+
 html {
 	font-family: 'Raleway', Tahoma, sans-serif;
 	width: 100%;
@@ -447,9 +451,16 @@ vertical-align: middle;
 }
 
 .bismillah {
-  margin: 25px;
+  margin: 20px;
   display: inline-block;
   max-height: 50px;
+  vertical-align: middle;
+}
+
+.assalamualaikum {
+  margin: 35px;
+  display: inline-block;
+  max-height: 80px;
   vertical-align: middle;
 }
 
