@@ -450,19 +450,30 @@ vertical-align: middle;
   vertical-align: middle;
 }
 
-.bismillah {
+.bismillah, .assalamualaikum {
   margin: 20px;
   display: inline-block;
-  max-height: 45px;
   vertical-align: middle;
 }
 
-.assalamualaikum {
-  margin: 20px;
-  display: inline-block;
-  max-height: 55px;
-  vertical-align: middle;
+.bismillah{
+  max-height: 45px;
 }
+
+.assalamualaikum {
+  max-height: 55px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+		.bismillah{
+			max-height: 60px;
+		}
+
+		.assalamualaikum {
+			max-height: 75px;
+		}
+}
+
 
 #toTop {
   height: 50px;
