@@ -6,7 +6,7 @@
 		and (-webkit-min-device-pixel-ratio: 2) {
 			.hero {
 				background-image: url(https://picsum.photos/id/25/1920/1080);
-				background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ios_sland.png");
+				background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ios_island.png");
 				background-attachment: local;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 				background-image: url(https://picsum.photos/id/25/1920/1080);
 				background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
 				background-attachment: local;
-				/*background-size: cover;*/
+				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;			
 				color: white;
