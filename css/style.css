@@ -1,8 +1,9 @@
 @supports (-webkit-touch-callout: none) {
 	/* CSS specific to iOS devices */
 	@media only screen
-		and (max-device-width: 767px)
-		and (-webkit-min-device-pixel-ratio: 2) {
+		and (min-device-width: 320px)
+		and (max-device-width: 768px)
+		and (-webkit-min-device-pixel-ratio: 3) {
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
 			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ios_sland.png");
@@ -15,9 +16,9 @@
 		}
 	}
 	@media only screen 
-		and (min-device-width: 768px) /* Minimum width for iPad portrait */
+		and (min-device-width: 769px) /* Minimum width for iPad portrait */
 		and (max-device-width: 1024px) /* Maximum width for iPad landscape */
-		and (-webkit-min-device-pixel-ratio: 1) {
+		and (-webkit-min-device-pixel-ratio: 2) {
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
 			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
@@ -32,7 +33,7 @@
 	@media only screen 
 		and (min-device-width: 1024px) /* Minimum width for iPad Pro portrait */
 		and (max-device-width: 1366px) /* Maximum width for iPad Pro landscape */
-		and (-webkit-min-device-pixel-ratio: 1) {
+		and (-webkit-min-device-pixel-ratio: 2) {
 		.hero {
 			background-image: url(https://picsum.photos/id/25/1920/1080);
 			background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/ipad_island.png");
