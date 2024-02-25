@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-/*
 // Smooth Anchor Scrolling
 $(document).on("click", 'a[href^="#"]', function(event) {
   event.preventDefault();
@@ -46,7 +45,6 @@ function scrollFunction() {
     document.getElementById("toTop").style.display = "none";
   }
 }
-*/
 
 // Preloader
 $(document).ready(function($) {
