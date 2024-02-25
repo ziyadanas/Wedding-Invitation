@@ -458,9 +458,9 @@ vertical-align: middle;
 }
 
 .assalamualaikum {
-  margin: 35px;
+  margin: 20px;
   display: inline-block;
-  max-height: 80px;
+  max-height: 65px;
   vertical-align: middle;
 }
 
@@ -490,6 +490,7 @@ vertical-align: middle;
   background-color: #BC8887;
 }
 
+/*
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #F4E2E2;
@@ -500,6 +501,7 @@ vertical-align: middle;
   -webkit-box-shadow: inset 0 0 6px #996E6D;
   background-color: #BC8887;
 }
+*/
 
 body.preloader-site {
   overflow: hidden;
