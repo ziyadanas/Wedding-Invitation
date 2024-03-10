@@ -291,14 +291,14 @@
     .nama-lengkap {
       font-family: 'Rouge Script', sans-serif;
       color: #996E6D;
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       letter-spacing: 0px;
       padding-bottom: 6px;
-      line-height: 3.7rem;
+      line-height: 3rem;
     }
     
     .ampersand {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-family: 'Rouge Script', sans-serif;
     color: #996E6D;
     line-height: 4rem;
@@ -307,7 +307,7 @@
     }
     
     .bodytext {
-      font-size: 15px;
+      font-size: 13px;
     }
     
     .time {
@@ -395,7 +395,7 @@
     }
     
     .divider_darkest {
-      max-height: 50px;
+      max-height: 40px;
     }
     
     @media only screen and (min-width: 769px) {

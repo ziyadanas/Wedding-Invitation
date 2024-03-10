@@ -397,6 +397,10 @@ vertical-align: middle;
   max-height: 50px;
 }
 
+.quote {
+  font-size: 15px;
+}
+
 @media only screen and (min-width: 769px) {
 	.bismillah{
 		max-height: 60px;
@@ -405,6 +409,10 @@ vertical-align: middle;
 	.assalamualaikum, .divider_darkest {
 		max-height: 75px;
 	}
+
+  .quote {
+    font-size: 19px;
+  }
 
 }
 
