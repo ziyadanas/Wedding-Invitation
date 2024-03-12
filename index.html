@@ -49,13 +49,18 @@
 
 	<!-- Begin Audio Player -->
 	<audio id="my_audio">
-		<source src="song/taylor.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
+		<source src="song/Taylor_Lovers.mp3" type="audio/mpeg">
 	</audio>
-	<script type="text/javascript">
-		window.onload=function(){
-			document.getElementById("my_audio").play();
-		}
+	<script>
+		// Get the audio element
+		var audio = document.getElementById("my_audio");
+		
+		audio.volume = 0.5; // Set the volume to 50%
+		function playAudioOnLoad() {
+    		audio.play();
+  		}
+
+  		window.onload = playAudioOnLoad;
 	</script>
 	<!-- End Audio Player -->
 
