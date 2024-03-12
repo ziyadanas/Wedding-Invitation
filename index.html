@@ -48,21 +48,25 @@
     <!-- End Script for Countdown -->
 
 	<!-- Begin Audio Player -->
-	<audio id="my_audio">
+	<audio id="my_audio" controls>
 		<source src="song/Taylor_Lovers.mp3" type="audio/mpeg">
 	</audio>
 	<script>
 		// Get the audio element
 		var audio = document.getElementById("my_audio");
 		
-		audio.volume = 0.5; // Set the volume to 50%
-		function playAudio {
-			if (audio.paused) {
-      			audio.play();
-    		}
-  		}
+		audio.volume = 0.3; // Set the volume to 50%
 
-  		window.addEventListener("touchstart", playAudio);
+		function playBackgroundAudio() {
+			if (audio.paused) {
+			audio.play();
+			}
+		}
+
+  		// Attach event listener for user interaction
+  		document.addEventListener("touchstart", playBackgroundAudio);
+  		document.addEventListener("click", playBackgroundAudio);
+		document.addEventListener("scroll", playBackgroundAudio);
 	</script>
 	<!-- End Audio Player -->
 
@@ -422,12 +426,14 @@
 
 						<div class="space40px"></div>
 
-						<a class="instagram":" href="https://github.com/ziyadanas/Wedding-Invitation.git" target="_blank" alt="Github Ziyad">
-							<i class="fab fa-github"></i> @ziyadanas
+						<a class="instagram" href="https://github.com/ziyadanas/Wedding-Invitation.git" target="_blank" alt="Github Ziyad">
+							<i class="fab fa-github"></i>
+							@ziyadanas
 						</a>
 			
-						<a class="instagram":" href="https://www.instagram.com/zazahari_" target="_blank" alt="Instagram Ziyad">
-							<i class="fab fa-instagram"></i> @zazahari_
+						<a class="instagram" href="https://www.instagram.com/zazahari_" target="_blank" alt="Instagram Ziyad">
+							<i class="fab fa-instagram"></i>
+							@zazahari_
 						</a>
 
 					</div>
