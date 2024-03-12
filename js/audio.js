@@ -6,4 +6,6 @@ function playBackgroundAudio() {
   }
 }
 
-window.addEventListener("scroll", playBackgroundAudio);
+//window.addEventListener("scroll", playBackgroundAudio);
+document.addEventListener("touchstart", playBackgroundAudio);
+document.addEventListener("click", playBackgroundAudio);
