@@ -56,11 +56,13 @@
 		var audio = document.getElementById("my_audio");
 		
 		audio.volume = 0.5; // Set the volume to 50%
-		function playAudioOnLoad() {
-    		audio.play();
+		function playAudio) {
+			if (audio.paused) {
+      			audio.play();
+    		}
   		}
 
-  		window.onload = playAudioOnLoad;
+  		window.addEventListener("touchstart", playAudio);
 	</script>
 	<!-- End Audio Player -->
 
