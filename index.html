@@ -34,6 +34,7 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/jquery.coundown.js"></script>
+	<script src="js/audio_policy.js"></script>
 	<link rel="icon" type="image/png" href="image/favicon.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -47,36 +48,19 @@
 	</script>
     <!-- End Script for Countdown -->
 
-	<!-- Begin Audio Player -->
-	<audio id="my_audio">
-		<source src="song/Taylor_Lovers.mp3" type="audio/mpeg">
-	</audio>
-	<script>
-		// Get the audio element
-		var audio = document.getElementById("my_audio");
-		
-		audio.volume = 0.3; // Set the volume to 50%
-
-		function playBackgroundAudio() {
-			if (audio.paused) {
-			audio.play();
-			}
-		}
-
-  		// Attach event listener for user interaction
-  		document.addEventListener("touchstart", playBackgroundAudio);
-  		document.addEventListener("click", playBackgroundAudio);
-		document.addEventListener("scroll", playBackgroundAudio);
-	</script>
-	<!-- End Audio Player -->
-
-
 	<!-- Github Button -->
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
-	
+
+	<!-- Start Song section -->
+	<audio id="myAudio" controls style="display: none;">
+		<source src="song/Taylor_Lovers.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	<!-- End Song section -->
+
 </head>
 
-<body>
+<body id="content">
 
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
@@ -86,8 +70,29 @@
     </div>
     <!-- End Preloader-->
 
+	<!-- Start Music Policy -->
+	<div id="policy" class="main-content sticky has-text-centered">
+		<div class="column is-12 regular-section">
+			<h1 class="title has-text-centered section-title" style="padding-bottom: 0%;">
+				Music Policy
+			</h1>
+		</div>
+	
+		<p class="h2 quote">
+			This website uses music for an enhanced experience.
+			<br>
+			By clicking "Accept", you agree to allow
+			<br>
+			the website to play audio.
+		</p>
+		<button onclick="acceptPolicy(); playAudio()" class="button btn-whatsapp" data-aos="zoom-in">
+			Accept
+		</button>
+	</div>
+	<!-- End Music Policy -->
+
 	<!-- Begin Header -->
-    <div class="header-wrapper" id="home">
+    <div class="header-wrapper" id="home" \>
 		<!-- Begin Hero -->
 		<section class="hero is-large">
 			<!-- Begin Hero Content-->

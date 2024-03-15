@@ -672,3 +672,14 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
+
+.sticky {
+  position: fixed; /* Fixed position */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  width: 100%; /* Full width */
+  height: 100%;;
+  background-color: #F4E2E2; /* Background color */
+  padding: 10px; /* Padding */
+  z-index: 9999; /* Higher z-index to stay on top of other elements */
+}
