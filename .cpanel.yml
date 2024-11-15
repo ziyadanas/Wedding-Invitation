@@ -1,0 +1,10 @@
+---
+deployment:
+	tasks:
+		- export DEPLOYPATH=/home/zzaharic/public_html/
+		- /bin/cp -rf index.html $DEPLOYPATH
+		- /bin/cp -rf css $DEPLOYPATH
+		- /bin/cp -rf font $DEPLAYPATH
+		- /bin/cp -rf js $DEPLOYPATH
+		- /bin/cp -rf song $DEPLOYPATH
+		- /bin/cp -rf image $DEPLOYPATH
