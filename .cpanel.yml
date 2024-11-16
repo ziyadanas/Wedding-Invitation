@@ -1,6 +1,0 @@
----
-deployment:
-	tasks:
-		- echo "[INFO] running cpanel command.."
-		- export DEPLOYPATH="/home/zzaharic/public_html/"
-		- /usr/bin/cp -R * $DEPLOYPATH
