@@ -1,0 +1,13 @@
+deployment:
+  task:
+    - echo "[INFO] Initiate Deployment..."
+    - export DEPLOYPATH=/home/zzaharic/public_html
+    - /usr/bin/rm -rf $DEPLOYPATH/*
+    - /usr/bin/rm -rf $DEPLOYPATH/.[!.]*
+    - /usr/bin/cp -rf css $DEPLOYPATH
+    - /usr/bin/cp -rf font $DEPLOYPATH
+    - /usr/bin/cp -rf image $DEPLOYPATH
+    - /usr/bin/cp -rf js $DEPLOYPATH
+    - /usr/bin/cp -rf song $DEPLOYPATH
+    - /usr/bin/cp -rf index.html $DEPLOYPATH
+    - echo "[INFO] Finish Deployment at $(date)..."
