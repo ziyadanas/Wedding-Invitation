@@ -1,6 +1,6 @@
 ---
 deployment:
-  task:
+  tasks:
     - echo "[INFO] Initiate Deployment..."
     - export DEPLOYPATH=/home/zzaharic/public_html
     - /usr/bin/rm -rf $DEPLOYPATH/*
