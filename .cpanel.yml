@@ -4,4 +4,4 @@ deployment:
       - export DEPLOYPATH="/home/zzaharic/public_html"
       - export SBOXPATH="$PWD"
       - echo "[INFO] Initiate Deployment to $DEPLOY_PATH..."
-      - /bin/ln -s $SBOXPATH $DEPLOYPATH
+      - /bin/cp -rf $SBOXPATH/* $DEPLOYPATH
