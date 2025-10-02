@@ -1,14 +1,9 @@
 ---
 deployment:
-  tasks:
-    - echo "[INFO] Initiate Deployment..."
-    - export DEPLOYPATH=/home/zzaharic/public_html
-    - /usr/bin/rm -rf $DEPLOYPATH/*
-    - /usr/bin/rm -rf $DEPLOYPATH/.[!.]*
-    - /usr/bin/cp -rf css $DEPLOYPATH
-    - /usr/bin/cp -rf font $DEPLOYPATH
-    - /usr/bin/cp -rf image $DEPLOYPATH
-    - /usr/bin/cp -rf js $DEPLOYPATH
-    - /usr/bin/cp -rf song $DEPLOYPATH
-    - /usr/bin/cp -rf index.html $DEPLOYPATH
-    - echo "[INFO] Finish Deployment at $(date)..."
+    tasks:
+      - export DEPLOY_PATH="/home/zzaharic/public_html"
+      - export SBOX_PATH="/home/zzaharic/repositories"
+      - echo "[INFO] Initiate Deployment to $DEPLOY_PATH..."
+      - /usr/bin/rm -rf "$DEPLOY_PATH"/* "$DEPLOY_PATH"/.[!.]*
+      - /usr/bin/cp -rf "$SBOX_PATH"/css "$SBOX_PATH"/font "$SBOX_PATH"/image "$SBOX_PATH"/js "$SBOX_PATH"/song "$SBOX_PATH"/index.html -t "$DEPLOY_PATH"
+      - echo "[INFO] Finish Deployment to $DEPLOY_PATH at $date..."
