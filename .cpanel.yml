@@ -2,6 +2,6 @@
 deployment:
     tasks:
       - export DEPLOYPATH="/home/zzaharic/public_html"
-      - export SBOXPATH="/home/zzaharic/repositories"
+      - export SBOXPATH="$PWD"
       - echo "[INFO] Initiate Deployment to $DEPLOY_PATH..."
-      - echo "$PWD"
+      - /bin/ln -s $SBOXPATH $DEPLOYPATH
