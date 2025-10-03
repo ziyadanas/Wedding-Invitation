@@ -5,4 +5,4 @@ deployment:
       - echo "[INFO] removing previous deployment directory..."
       - /bin/rm -rf $DEPLOYPATH/*
       - echo "[INFO] Initiate Deployment to $DEPLOY_PATH..."
-      - /bin/cp -rf $PWD/* $DEPLOYPATH
+      - /bin/cp -Rf * $DEPLOYPATH
