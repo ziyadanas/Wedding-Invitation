@@ -83,6 +83,44 @@ body {
     font-size: 24px;
     cursor: pointer;
     border: none;
+    /* Only pulse the background, not the font */
+    position: relative;
+    overflow: visible;
+}
+
+.overlay .overlay-content .toggle-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background: #442040;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: pulse 3s infinite;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.overlay .overlay-content .toggle-button > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.08);
+        box-shadow: 0 0 40px 10px #fee4bc66, 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
 }
 
 .overlay .overlay-content .toggle-button p {
