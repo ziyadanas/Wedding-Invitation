@@ -35,7 +35,7 @@
                     <h2 class="fade-top-3">&</h2><br><br>
                     <h2 class="fade-top-3">Nurkhalifah</h2><br>
                     <p class="date fade-top-4">
-                        <span>Sabtu &#9670; 06 Disember 2025</span>
+                        <span>&#9670; Sabtu &#9670; 06 Disember 2025 &#9670;</span>
                     </p>
                     <ul class="fade-top-4" id="countdown" >
                         <li><span class="days">00</span><p class="days_text">Hari</p></li>
@@ -113,7 +113,7 @@
             </section>
 
             <section class="info">
-                <div class="ucapan reveal fade-bottom">
+                <div class="ucapan">
                     <div class="container">
                     <div class="content typeit-typewriter">
                 </div>
@@ -158,12 +158,12 @@
             <p>No.1 Persiaran A,</p>
             <p>Jalan Lapangan Terbang Subang</p>
             <p>47200 Subang, Selangor</p>
-            <div class="button" onclick="openGoogleMaps()">
-                <button class="google">
+            <div class="button">
+                <button class="google" onclick="openGoogleMaps(); document.getElementById('audio-player').pause();">
                     <i class='bx bxl-google'></i>
                     <span>Maps</span>
                 </button>
-                <button class="waze" onclick="openWaze()">
+                <button class="waze" onclick="openWaze(); document.getElementById('audio-player').pause();">
                     <i class="fa-brands fa-waze"></i>
                     <span>Waze</span>
                 </button>
