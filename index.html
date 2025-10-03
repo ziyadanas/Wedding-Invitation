@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script src="./js/jquery.countdown.js"></script>
     <title>Jemputan Kahwin</title>
 </head>
 
@@ -26,136 +28,138 @@
     </div>
     <div class="card">
         <div class="petal-container"></div>
-        <!-- Intro Section -->
-        <section class="intro">
-            <div class="content">
-                <p class="title fade-top-2">Walimatul urus</p>
-                <h2 class="fade-top-3">Nurkhalifah</h2><br>
-                <h2 class="fade-top-3">&</h2><br>
-                <h2 class="fade-top-3">Ziyad</h2><br>
-                <p class="date fade-top-4">
-                    <span>Sabtu</span>
-                    <span>|</span>
-                    <span>06 December 2025</span>
-                </p>
-                <ul class="fade-top-4" id="countdown" >
-                    <li><span class="days">00</span><p class="days_text">Hari</p></li>
-                    <li class="separator">:</li>
-                    <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-                    <li class="separator">:</li>
-                    <li><span class="minutes">00</span><p class="minutes_text">Minit</p></li>
-                    <li class="separator">:</li>
-                    <li><span class="seconds">00</span><p class="seconds_text">Saat</p></li>
-                </ul>
-                <script type="text/javascript">
-                    var now = new Date();
-                    var day = now.getDate();
-                    var month = now.getMonth() + 1;
-                    var year = now.getFullYear() + 1;
+        <div class="main">
+            <!-- Intro Section -->
+            <section class="intro">
+                <div class="content">
+                    <p class="title fade-top-2">Raikan Cinta</p>
+                    <h2 class="fade-top-3">Ziyad</h2><br><br>
+                    <h2 class="fade-top-3">&</h2><br><br>
+                    <h2 class="fade-top-3">Nurkhalifah</h2><br>
+                    <p class="date fade-top-4">
+                        <span>Sabtu &#9670; 06 Disember 2025</span>
+                    </p>
+                    <ul class="fade-top-4" id="countdown" >
+                        <li><span class="days">00</span><p class="days_text">Hari</p></li>
+                        <li class="separator">:</li>
+                        <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+                        <li class="separator">:</li>
+                        <li><span class="minutes">00</span><p class="minutes_text">Minit</p></li>
+                        <li class="separator">:</li>
+                        <li><span class="seconds">00</span><p class="seconds_text">Saat</p></li>
+                    </ul>
+                    <script type="text/javascript">
+                        var now = new Date();
+                        var day = now.getDate();
+                        var month = now.getMonth() + 1;
+                        var year = now.getFullYear() + 1;
 
-                    var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-                    var hari = '12/06/2025 11:00:00';
+                        var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+                        var hari = '12/06/2025 11:00:00';
 
-                    $('#countdown').countdown({
-                        date: hari, // TODO Date format: 07/27/2017 17:00:00
-                        offset: +8, // TODO Your Timezone Offset
-                        day: 'Hari',
-                        days: 'Hari',
-                        hour: 'Jam',
-                        hours: 'Jam',
-                        minute: 'Minit',
-                        minutes: 'Minit',
-                        second: 'Saat',
-                        seconds: 'Saat'
-                    });
-                </script>
-            </div>
-        </section>
+                        $('#countdown').countdown({
+                            date: hari, // TODO Date format: 07/27/2017 17:00:00
+                            offset: +8, // TODO Your Timezone Offset
+                            day: 'Hari',
+                            days: 'Hari',
+                            hour: 'Jam',
+                            hours: 'Jam',
+                            minute: 'Minit',
+                            minutes: 'Minit',
+                            second: 'Saat',
+                            seconds: 'Saat'
+                        });
+                    </script>
+                </div>
+            </section>
 
-        <!-- Event Info Section -->
-        <section class="info">
-            <img src="./images/assalamualaikum-3.png" alt="" class="assalamualaikum reveal fade-bottom">
-            <div class="event-info reveal fade-bottom">
-                <div class="one">
-                    <p>Dengan penuh kesyukuran</p>
-                    <p>kami</p>
-                    <div class="parent">
-                        <p>Ali Bin Abu</p>
+            <!-- Event Info Section -->
+            <section class="info">
+                <img src="./images/assalamualaikum-3.png" alt="" class="assalamualaikum reveal fade-bottom">
+                <div class="event-info reveal fade-bottom">
+                    <div class="one">
+
+                        <div class="parent">
+                            <p>ZAHARI BIN MOHD REBA</p>
+                            <p>&</p>
+                            <p>HASNI BINTI ZAKARIA</p>
+                        </div>
+                        <p>Dengan Segala Hormatnya Mempersilakan</p>
+                        <p>Dato'/Datin/Tuan/Puan/Encik/Cik</p>
+                        <p>Sekeluarga Hadir Ke Majlis Perkahwinan Putera Kami</p>
+                    </div>
+                    <div class="two">
+                        <p>ZIYAD ANAS BIN ZAHARI</p>
                         <p>&</p>
-                        <p>Miya Binti Kasim</p>
+                        <p>NURKHALIFAH BINTI MATJISIN</p>
                     </div>
-                    <p>Menjemput</p>
-                    <p>Dato' | Datin | Tuan | Puan | Encik | Cik</p>
-                    <p>seisi keluarga hadir ke</p>
-                    <p>majlis perkahwinan putera kami</p>
+                    <div class="three">
+                        <p class="title">TEMPAT</p>
+                        <p>No.1 Persiaran A,</p>
+                        <p>Jalan Lapangan Terbang Subang</p>
+                        <p>47200 Subang, Selangor</p>
+                    </div>
+                    <div class="four">
+                        <p class="title">Tarikh</p>
+                        <p>Sabtu, 06 Disember 2025</p>
+                        <p>Bersamaan 15 Rejab 1447H</p>
+                    </div>
+                    <div class="five">
+                        <p class="title">Masa</p>
+                        <p>11:00 AM - 4:00 PM</p>
+                    </div>
                 </div>
-                <div class="two">
-                    <p>Muhamad John Bin Ali</p>
-                    <p>&</p>
-                    <p>Nur Sarah Binti Anwar</p>
-                </div>
-                <div class="three">
-                    <p class="title">Tempat</p>
-                    <p>10A Jalan Seri Ampang 2</p>
-                    <p>Kampung Pisang</p>
-                    <p>47300 Subang, Selangor</p>
-                </div>
-                <div class="four">
-                    <p class="title">Tarikh</p>
-                    <p>Sabtu, 31 December 9999</p>
-                    <p>Bersamaan 30 Zulhijjah 9999H</p>
-                </div>
-                <div class="five">
-                    <p class="title">Masa</p>
-                    <p>11:00 AM - 4:00 PM</p>
-                </div>
-            </div>
+            </section>
 
-            <!-- Aturcara -->
-            <div class="aturcara reveal fade-bottom">
-                <br>
-                <p class="title">aturcara majlis</p>
-                <div class="one">
-                    <p>Kehadiran Tetamu</p>
-                    <p>11:30 Pagi</p>
-                </div>
-                <div class="two">
-                    <p>Ketibaan Pengantin</p>
-                    <p>1:00 Petang</p>
-                </div>
-                <div class="three">
-                    <p>Makan Beradab</p>
-                    <p>1:30 Petang</p>
-                </div>
-                <div class="four">
-                    <p>Majlis Bersurai</p>
-                    <p>4:00 Petang</p>
-                </div>
-            </div>
-            <div class="ucapan reveal fade-bottom">
-                <div class="container">
-                    <img src="./images/ucapan-bg.png" alt="">
-                    <div class="content">
-                        <p>Ya Allah, berkatilah majlis perkahwinan ini, limpahkan baraqah dan rahmat kepada kedua
-                            mempelai ini,
-                            Kurniakanlah mereka
-                            zuriat yang soleh dan solehah. Kekalkanlah jodoh mereka di dunia dan di akhirat dan
-                            sempurnakanlah
-                            agama mereka dengan
-                            berkat ikatan ini.</p>
+            <section class="info">
+                <!-- Aturcara -->
+                <div class="aturcara reveal fade-bottom">
+                    <br>
+                    <p class="title">aturcara majlis</p>
+                    <div class="one">
+                        <p>Kehadiran Tetamu</p>
+                        <p>11:30 Pagi</p>
+                    </div>
+                    <div class="two">
+                        <p>Ketibaan Pengantin</p>
+                        <p>1:00 Petang</p>
+                    </div>
+                    <div class="three">
+                        <p>Makan Beradab</p>
+                        <p>1:30 Petang</p>
+                    </div>
+                    <div class="four">
+                        <p>Majlis Bersurai</p>
+                        <p>4:00 Petang</p>
                     </div>
                 </div>
-            </div>
-            <img src="./images/divider.png" alt="" class="divider reveal fade-bottom">
-        </section>
-        <section class="footer">
-            <ul class="menu">
-                <li id="calendar-btn"><i class='bx bx-calendar'></i></li>
-                <li id="location-btn"><i class='bx bx-map'></i></li>
-                <li id="music-btn"><i class='bx bx-music'></i></li>
-                <li id="contact-btn"><i class='bx bx-phone'></i></li>
-            </ul>
-        </section>
+            </section>
+
+            <section class="info">
+                <div class="ucapan reveal fade-bottom">
+                    <div class="container">
+                        <div class="content">
+                            <p>Ya Allah, berkatilah majlis perkahwinan ini, limpahkan baraqah dan rahmat kepada kedua
+                                mempelai ini,
+                                Kurniakanlah mereka
+                                zuriat yang soleh dan solehah. Kekalkanlah jodoh mereka di dunia dan di akhirat dan
+                                sempurnakanlah
+                                agama mereka dengan
+                                berkat ikatan ini.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <ul class="menu">
+                    <li id="calendar-btn"><i class='bx bx-calendar'></i></li>
+                    <li id="location-btn"><i class='bx bx-map'></i></li>
+                    <li id="music-btn"><i class='bx bx-music'></i></li>
+                    <li id="contact-btn"><i class='bx bx-phone'></i></li>
+                </ul>
+            </section>
+        </div>
     </div>
 
     <!-- Bottom Modal -->
@@ -163,9 +167,9 @@
         <div class="calendar">
             <h1>Calendar</h1>
             <p>
-                <span>31 December 9999</span>
+                <span>06 Disember 2025</span>
                 <span>|</span>
-                <span>30 Zulhijjah 9999H</span>
+                <span>15 Rejab 1447H</span>
             </p>
             <div class="button">
                 <button class="google" onclick="addGoogleCalendar()">
@@ -183,9 +187,9 @@
     <div id="location-menu" class="toggle-menu">
         <div class="location">
             <h1>Lokasi</h1>
-            <p>10A Jalan Seri Ampang 2</p>
-            <p>Kampung Pisang</p>
-            <p>47300 Subang, Selangor</p>
+            <p>No.1 Persiaran A,</p>
+            <p>Jalan Lapangan Terbang Subang</p>
+            <p>47200 Subang, Selangor</p>
             <div class="button" onclick="openGoogleMaps()">
                 <button class="google">
                     <i class='bx bxl-google'></i>
@@ -202,7 +206,7 @@
     <div id="music-menu" class="toggle-menu">
         <div class="music">
             <h1>Lagu</h1>
-            <p>Beautiful in White x Canon in D</p>
+            <p>Christina Perri - A Thousand Years</p>
             <p>(Piano Cover by Riyandi Kusuma)</p>
             <audio id="audio-player" controls autoplay loop>
                 <source type="audio/mp3"
@@ -219,13 +223,28 @@
                     <div class="first-section">
                         <i class='bx bxs-user-circle'></i>
                         <div class="name">
-                            <span>Ali</span>
+                            <span>Zahari</span>
                             <span>Bapa Pengantin Lelaki</span>
                         </div>
                     </div>
                     <div class="second-section">
-                        <button onclick="makePhoneCall('+60123456789')"><i class='bx bx-phone'></i></button>
-                        <button onclick="openWhatsApp('+60123456789')"><i class='bx bxl-whatsapp'></i></button>
+                        <button onclick="makePhoneCall('+60196401468')"><i class='bx bx-phone'></i></button>
+                        <button onclick="openWhatsApp('+60196401468')"><i class='bx bxl-whatsapp'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="person">
+                    <div class="first-section">
+                        <i class='bx bxs-user-circle'></i>
+                        <div class="name">
+                            <span>Hasni</span>
+                            <span>Ibu Pengantin Lelaki</span>
+                        </div>
+                    </div>
+                    <div class="second-section">
+                        <button onclick="makePhoneCall('+60166857555')"><i class='bx bx-phone'></i></button>
+                        <button onclick="openWhatsApp('+60166857555')"><i class='bx bxl-whatsapp'></i></button>
                     </div>
                 </div>
             </div>
@@ -243,7 +262,6 @@
 
     <!-- Custom Js -->
     <script src="./js/main.js"></script>
-    <script src="./js/jquery.countdown.js"></script>
 </body>
 
 </html>
