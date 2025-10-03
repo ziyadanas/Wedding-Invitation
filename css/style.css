@@ -13,7 +13,9 @@
     letter-spacing: 0.5px; /* Added font spacing */
     word-spacing: 2px;     /* Optional: add word spacing */
     -webkit-tap-highlight-color: transparent;
-    -webkit-focus-ring-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
     outline: none;
 }
 

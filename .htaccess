@@ -1,0 +1,31 @@
+# BEGIN Cache Control
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images: cache for 1 month
+  ExpiresByType image/jpg "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+
+  # Fonts: cache for 1 month
+  ExpiresByType font/woff2 "access plus 1 month"
+  ExpiresByType font/woff "access plus 1 month"
+  ExpiresByType font/ttf "access plus 1 month"
+
+  # CSS + JS: force re-check every load
+  ExpiresByType text/css "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # CSS + JS always revalidated
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# END Cache Control
