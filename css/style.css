@@ -300,8 +300,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    z-index: 500;
 }
 
 .card .main::before,
@@ -310,7 +308,7 @@ section {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 5px;
+    width: 10px;
     background: #593F59;
     z-index: 10;
 }
@@ -337,7 +335,7 @@ section {
 
 .card section.intro .content {
     display: block;
-    padding: 200px 0px;
+    padding: 100px 0px;
     text-align: center;
 }
 
@@ -368,12 +366,8 @@ section {
     font-size: 4rem;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #F7D4C6;
-    text-shadow:
-        0 2px 8px #f7d4c655,
-        0 0px 2px #fff8,
-        0 1px 0 #fff4;
-    /* subtle shine effect, does not overwrite animation */
+    color: #F7D4C4;
+
 }
 
 .card section.intro .content .date {
@@ -437,6 +431,7 @@ section {
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 1px;
+    line-height: 1.5;      /* Added line spacing */
 }
 
 .card section.info .event-info .one .parent {
@@ -725,7 +720,6 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 85%;
 }
 
 .card section.info .ucapan .content p {
