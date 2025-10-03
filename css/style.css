@@ -12,6 +12,9 @@
     color: #EFDEE9;
     letter-spacing: 0.5px; /* Added font spacing */
     word-spacing: 2px;     /* Optional: add word spacing */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
 }
 
 body {
