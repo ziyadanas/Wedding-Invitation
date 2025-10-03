@@ -50,9 +50,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
     /*background-image: url('../images/intro-bg.png');*/
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -326,12 +326,20 @@ section {
 }
 
 .card section.intro .content h2 {
-	font-family: 'Rouge Script', sans-serif;
-	font-weight: 700;
-	font-size: 4rem;
+    /* 
+        This CSS snippet sets the font styling for a heading or prominent text.
+        - Uses 'Rouge Script' and 'Great Vibes' as primary fonts, with cursive and sans-serif as fallbacks.
+        - Note: For Safari compatibility, ensure that the web fonts are properly imported using @import or <link> in HTML, 
+            and that the font files support WOFF/WOFF2 formats.
+        - Sets font weight to bold (700), large font size (4rem), and vertical margins.
+        - Applies a soft gold color (#fee4bc) for elegant appearance.
+    */
+    font-family: 'Rouge Script', 'Great Vibes', cursive, sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
     margin-top: 10px;
     margin-bottom: 10px;
-	color: #fee4bc;
+    color: #fee4bc;
 }
 
 .card section.intro .content .date {
