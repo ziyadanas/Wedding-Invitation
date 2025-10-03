@@ -177,16 +177,16 @@ function addAppleCalendar() {
  *  Location for Google and Waze
   ======================================================= */
 function openGoogleMaps() {
-    const latitude = 3.1575;  // Example latitude
-    const longitude = 101.7116;  // Example longitude
+    const latitude = 3.1300228970618424;  // Example latitude
+    const longitude = 101.56759499571224;  // Example longitude
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}&travelmode=driving`;
 
     window.open(googleMapsUrl, "_blank");  // Open in a new tab
 }
 
 function openWaze() {
-    const latitude = 3.1575;  // Example latitude
-    const longitude = 101.7116;  // Example longitude
+    const latitude = 3.1300228970618424;  // Example latitude
+    const longitude = 101.56759499571224;  // Example longitude
     //const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
     const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`
 
@@ -201,7 +201,7 @@ function openWaze() {
     Contact
   ======================================================= */
 function openWhatsApp(phoneNumber) {
-    const message = "https://kad-jemputan-kahwin.vercel.app/\n\nHello, maaf menggangu. Saya ingin bertanyakan sesuatu berkenaan majlis perkahwinan ini.";
+    const message = "Hi, saya ingin bertanyakan sesuatu berkenaan majlis perkahwinan ini.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");  // Opens WhatsApp in a new tab
 }
