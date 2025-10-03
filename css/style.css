@@ -138,7 +138,19 @@ body {
 }
 
 .fade-top-3 {
-    animation: growth 1s ease-in-out;
+    transform: rotate(-2deg);
+    animation: growth-rotate 1s ease-in-out;
+}
+
+@keyframes growth-rotate {
+    0% {
+        transform: scale(0) rotate(-2deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(-2deg);
+        opacity: 1;
+    }
 }
 
 .fade-top-4 {
