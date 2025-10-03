@@ -281,15 +281,27 @@ function createPetal() {
 
         petalContainer.appendChild(petal);
 
+        // Fade in when created
+        petal.style.opacity = 0;
+        petal.style.transition = 'opacity 0.8s';
+        setTimeout(() => {
+            petal.style.opacity = petalOpacity;
+        }, 10);
+
+        // Fade out before removal
+        setTimeout(() => {
+            petal.style.opacity = 0;
+        }, duration * 1000 - 800);
+
         setTimeout(() => {
             if (petal.parentNode === petalContainer) {
-                petalContainer.removeChild(petal);
+            petalContainer.removeChild(petal);
             }
         }, duration * 1000);
+        }
     }
-}
 
-setInterval(createPetal, petalInterval);
+    setInterval(createPetal, petalInterval);
 
 
 
