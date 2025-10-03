@@ -106,10 +106,10 @@ setupCountdown(".campaign-0", new Date().getMilliseconds(), 1924920000000);
  *  Add to Calendar
   ======================================================= */
 const event = {
-    title: "Jemputan Kenduri Kahwin John & Sarah",
-    startDate: "99991231T033000Z", // YYYYMMDDTHHmmssZ (UTC)
-    endDate: "99991231T090000Z",
-    location: "10A Jalan Seri Ampang 2, Kampung Pisang, 47300 Subang, Selangor, Malaysia",
+    title: "Jemputan Kenduri Kahwin Ziyad & Nurkhalifah",
+    startDate: "20251206T110000Z", // YYYYMMDDTHHmmssZ (UTC)
+    endDate: "20251206T160000Z",
+    location: "No.1 Persiaran A, Jalan Lapangan Terbang Subang, 47200 Subang, Selangor",
     description: "Kami menjemput tuan/puan hadir ke majlis perkahwinan anakanda kami.",
 };
 
@@ -187,8 +187,7 @@ function openGoogleMaps() {
 function openWaze() {
     const latitude = 3.1300228970618424;  // Example latitude
     const longitude = 101.56759499571224;  // Example longitude
-    //const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
-    const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`
+    const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
 
     window.open(wazeUrl, "_blank");  // Open in a new tab
 }
