@@ -392,9 +392,8 @@ section {
     justify-content: center;  /* Center vertically (if you want) */
     padding: 0;
     gap: 0;
-    height: auto;
-    min-height: unset;
-    flex-shrink: 1;
+    min-height: 0 !important;
+    max-height: 500vh !important;
     text-align: center;       /* Center text inside block elements */
 }
 
