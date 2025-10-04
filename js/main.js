@@ -14,6 +14,7 @@
 document.getElementById("toggle-content").addEventListener("click", function () {
     var wrapper = document.querySelector(".wrapper"); // Change to wrapper
     var card = document.querySelector(".card");
+    var bottom = document.querySelector(".aturcara");
 
     // Add the 'hidden' class to start the fade out transition
     wrapper.classList.add("hidden");
@@ -27,7 +28,11 @@ document.getElementById("toggle-content").addEventListener("click", function () 
         // Trigger fade-in for .card
         setTimeout(function() {
             card.classList.add("visible");
-        }, 10);
+            setTimeout(function() {
+                autoScrollCancelled = false;
+                smoothScrollTo(bottom, 40000); // Slow, smooth scroll
+            }, 2000); // Adjust this delay to match your fade-in duration
+        }, 1000);
     }, { once: true });
 
     // Play the audio
@@ -35,7 +40,34 @@ document.getElementById("toggle-content").addEventListener("click", function () 
     audioPlayer.play();  // Start playing the audio
 });
 
+/*============================================================================================
+    # Scrolling Animation
+============================================================================================*/
+function smoothScrollTo(element, duration = 2000) {
+    const targetY = element.getBoundingClientRect().top + window.pageYOffset;
+    const startY = window.pageYOffset;
+    const distance = targetY - startY;
+    let startTime = null;
 
+    function animation(currentTime) {
+        if (autoScrollCancelled) return; // Stop if cancelled
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        window.scrollTo(0, startY + distance * progress);
+        if (progress < 1) {
+            requestAnimationFrame(animation);
+        }
+    }
+    requestAnimationFrame(animation);
+}
+
+// Listen for user interaction to cancel autoscroll
+['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(eventType => {
+    window.addEventListener(eventType, () => {
+        autoScrollCancelled = true;
+    }, { once: true, passive: true });
+});
 
 
 
@@ -107,8 +139,8 @@ setupCountdown(".campaign-0", new Date().getMilliseconds(), 1924920000000);
   ======================================================= */
 const event = {
     title: "Jemputan Kenduri Kahwin Ziyad & Nurkhalifah",
-    startDate: "20251206T110000Z", // YYYYMMDDTHHmmssZ (UTC)
-    endDate: "20251206T160000Z",
+    startDate: "20251206T030000Z", // YYYYMMDDTHHmmssZ (UTC)
+    endDate: "20251206T080000Z",
     location: "No.1 Persiaran A, Jalan Lapangan Terbang Subang, 47200 Subang, Selangor",
     description: "Kami menjemput tuan/puan hadir ke majlis perkahwinan anakanda kami.",
 };
@@ -132,18 +164,18 @@ function generateGoogleCalendarLink(event) {
 function generateICS(event) {
     const { title, startDate, endDate, location, description } = event;
 
-    return `
-        BEGIN:VCALENDAR
-        VERSION:2.0
-        BEGIN:VEVENT
-        SUMMARY:${title}
-        DTSTART:${startDate}
-        DTEND:${endDate}
-        LOCATION:${location}
-        DESCRIPTION:${description}
-        END:VEVENT
-        END:VCALENDAR
-    `.trim();
+    return [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "BEGIN:VEVENT",
+        `SUMMARY:${title}`,
+        `DTSTART:${startDate}`,
+        `DTEND:${endDate}`,
+        `LOCATION:${location}`,
+        `DESCRIPTION:${description}`,
+        "END:VEVENT",
+        "END:VCALENDAR"
+    ].join("\r\n");
 }
 
 // Function to download an ICS file
