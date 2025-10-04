@@ -30,6 +30,7 @@ document.getElementById("toggle-content").addEventListener("click", function () 
             card.classList.add("visible");
             setTimeout(function() {
                 autoScrollCancelled = false;
+                enableAutoScrollCancel();
                 smoothScrollTo(bottom, 40000); // Slow, smooth scroll
             }, 2000); // Adjust this delay to match your fade-in duration
         }, 1000);
@@ -43,7 +44,7 @@ document.getElementById("toggle-content").addEventListener("click", function () 
 /*============================================================================================
     # Scrolling Animation
 ============================================================================================*/
-function smoothScrollTo(element, duration = 2000) {
+function smoothScrollTo(element, duration) {
     const targetY = element.getBoundingClientRect().top + window.pageYOffset;
     const startY = window.pageYOffset;
     const distance = targetY - startY;
@@ -63,11 +64,13 @@ function smoothScrollTo(element, duration = 2000) {
 }
 
 // Listen for user interaction to cancel autoscroll
-['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(eventType => {
-    window.addEventListener(eventType, () => {
-        autoScrollCancelled = true;
-    }, { once: true, passive: true });
-});
+function enableAutoScrollCancel() {
+    ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(eventType => {
+        window.addEventListener(eventType, () => {
+            autoScrollCancelled = true;
+        }, { once: true, passive: true });
+    });
+}
 
 
 

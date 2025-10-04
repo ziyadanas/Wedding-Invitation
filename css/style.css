@@ -392,7 +392,10 @@ section {
     justify-content: center;
     gap: 10px;
     padding: 50px 0px;
-    min-height: 100vh;
+    min-height: 0;
+    padding: 0 !important;
+    gap: 0 !important;
+    
 }
 
 .card section.info .assalamualaikum {
