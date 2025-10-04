@@ -231,7 +231,7 @@ body {
 ============================================================================================*/
 .petal-container {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     /* Full width within the card */
     height: 100%;
@@ -290,6 +290,10 @@ body {
 section {
     display: block;
     unicode-bidi: isolate;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /*============================================================================================
@@ -310,7 +314,7 @@ section {
     bottom: 0;
     width: 10px;
     background: #593F59;
-    z-index: 0;
+    z-index: 1;
 }
 
 .card .main::before {
@@ -330,12 +334,12 @@ section {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    z-index: 500;
+    z-index: 50;
 }
 
 .card section.intro .content {
     display: block;
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
     text-align: center;
 }
 
@@ -443,8 +447,12 @@ section {
 }
 
 .card section.info .event-info .one .parent p {
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 700;
+    font-family: 'Rouge Script', sans-serif;
+    letter-spacing: 0px;
+    padding-bottom: 6px;
+    line-height: 1rem;
 }
 
 .card section.info .event-info .two {
@@ -456,8 +464,12 @@ section {
 }
 
 .card section.info .event-info .two p {
+    font-size: 2rem;
     font-weight: 700;
-    font-size: 18px;
+    font-family: 'Rouge Script', sans-serif;
+    letter-spacing: 0px;
+    padding-bottom: 6px;
+    line-height: 1rem;
 }
 
 .card section.info .event-info .three .title,
