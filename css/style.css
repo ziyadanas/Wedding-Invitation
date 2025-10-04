@@ -333,7 +333,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 0;
     z-index: 50;
 }
 
@@ -388,14 +388,12 @@ section {
 .card section.info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 50px 0px;
+    align-items: center;      /* Center horizontally */
+    justify-content: center;  /* Center vertically (if you want) */
+    padding: 0;
+    gap: 0;
     min-height: 0;
-    padding: 0 !important;
-    gap: 0 !important;
-    
+    text-align: center;       /* Center text inside block elements */
 }
 
 .card section.info .assalamualaikum {
