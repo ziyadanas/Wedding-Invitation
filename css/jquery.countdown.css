@@ -12,9 +12,15 @@ ul#countdown li {
 	display: inline-block;
 }
 ul#countdown li span {
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 30px;
+    font-size: 30px;
+    font-weight: 1000;
+    line-height: 30px;
+    background: #593F59;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 12px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 ul#countdown li.separator {
 	font-size: 30px;
@@ -22,5 +28,6 @@ ul#countdown li.separator {
 	vertical-align: top;
 }
 ul#countdown li p {
+    line-height: 0;
 	font-size: 16px;
 }

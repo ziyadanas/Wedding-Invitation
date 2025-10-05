@@ -29,7 +29,6 @@ document.getElementById("toggle-content").addEventListener("click", function () 
         setTimeout(function() {
             card.classList.add("visible");
             setTimeout(function() {
-                autoScrollCancelled = false;
                 enableAutoScrollCancel();
                 smoothScrollTo(bottom, 40000); // Slow, smooth scroll
             }, 2000); // Adjust this delay to match your fade-in duration
@@ -44,6 +43,8 @@ document.getElementById("toggle-content").addEventListener("click", function () 
 /*============================================================================================
     # Scrolling Animation
 ============================================================================================*/
+let autoScrollCancelled = false;
+let autoScrollAnimationFrame = null;
 function smoothScrollTo(element, duration) {
     const targetY = element.getBoundingClientRect().top + window.pageYOffset;
     const startY = window.pageYOffset;
@@ -51,24 +52,37 @@ function smoothScrollTo(element, duration) {
     let startTime = null;
 
     function animation(currentTime) {
-        if (autoScrollCancelled) return; // Stop if cancelled
+        if (autoScrollCancelled) {
+            if (autoScrollAnimationFrame) {
+                cancelAnimationFrame(autoScrollAnimationFrame);
+                autoScrollAnimationFrame = null;
+            }
+            return; // Stop if cancelled
+        }
         if (!startTime) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
         const progress = Math.min(timeElapsed / duration, 1);
         window.scrollTo(0, startY + distance * progress);
         if (progress < 1) {
-            requestAnimationFrame(animation);
+            autoScrollAnimationFrame = requestAnimationFrame(animation);
+        } else {
+            autoScrollAnimationFrame = null;
         }
     }
-    requestAnimationFrame(animation);
+    autoScrollAnimationFrame = requestAnimationFrame(animation);
 }
 
 // Listen for user interaction to cancel autoscroll
 function enableAutoScrollCancel() {
+    function cancelScroll() {
+        autoScrollCancelled = true;
+        if (autoScrollAnimationFrame) {
+            cancelAnimationFrame(autoScrollAnimationFrame);
+            autoScrollAnimationFrame = null;
+        }
+    }
     ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(eventType => {
-        window.addEventListener(eventType, () => {
-            autoScrollCancelled = true;
-        }, { once: true, passive: true });
+        window.addEventListener(eventType, cancelScroll, { once: true, passive: true });
     });
 }
 
