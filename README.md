@@ -2,6 +2,12 @@
 
 This repository contains my custom design for a wedding invitation card - a beautiful, interactive web-based invitation.
 
+## ☕ Support
+
+If you like this project and want to show your appreciation, you can buy me a coffee!
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-PayPal-orange?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/ziyadanas/1)
+
 ## 🌸 Features
 
 - **Responsive Design**: Works perfectly on desktop and mobile devices
@@ -50,3 +56,4 @@ This project is deployed using cPanel hosting, making it easy to manage and main
 ├── images/                 # Images and graphics
 └── music/                  # Audio files
 ```
+
