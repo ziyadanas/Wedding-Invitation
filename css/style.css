@@ -339,6 +339,18 @@ section {
     padding-bottom: 0;
 }
 
+.card section.intro::before,
+.card section.info::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 10px solid #593F59;
+    z-index: 0;
+    pointer-events: none;
+}
 
 /*============================================================================================
     # Intro
@@ -350,6 +362,7 @@ section {
     background-position: center;
     height: auto;
     z-index: 50;
+    position: relative;
 }
 
 .card section.intro .content {
