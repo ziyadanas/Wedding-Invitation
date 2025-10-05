@@ -30,7 +30,7 @@ document.getElementById("toggle-content").addEventListener("click", function () 
             card.classList.add("visible");
             setTimeout(function() {
                 enableAutoScrollCancel();
-                smoothScrollTo(bottom, 40000); // Slow, smooth scroll
+                smoothScrollTo(bottom, 30000); // Slow, smooth scroll
             }, 2000); // Adjust this delay to match your fade-in duration
         }, 1000);
     }, { once: true });
