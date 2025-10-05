@@ -40,6 +40,47 @@ document.getElementById("toggle-content").addEventListener("click", function () 
     audioPlayer.play();  // Start playing the audio
 });
 
+
+/*============================================================================================
+    # Page Visibility API - Pause audio when screen off or browser hidden
+============================================================================================*/
+document.addEventListener('visibilitychange', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    
+    if (document.hidden) {
+        // Page is hidden (screen off, tab switched, browser minimized)
+        if (audioPlayer && !audioPlayer.paused) {
+            audioPlayer.pause();
+            // Store that we paused due to visibility change
+            audioPlayer.dataset.pausedByVisibility = 'true';
+        }
+    } else {
+        // Page is visible again
+        if (audioPlayer && audioPlayer.dataset.pausedByVisibility === 'true') {
+            audioPlayer.play();
+            // Remove the flag
+            delete audioPlayer.dataset.pausedByVisibility;
+        }
+    }
+});
+
+// Also handle window focus/blur events as additional fallback
+window.addEventListener('blur', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    if (audioPlayer && !audioPlayer.paused) {
+        audioPlayer.pause();
+        audioPlayer.dataset.pausedByBlur = 'true';
+    }
+});
+
+window.addEventListener('focus', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    if (audioPlayer && audioPlayer.dataset.pausedByBlur === 'true') {
+        audioPlayer.play();
+        delete audioPlayer.dataset.pausedByBlur;
+    }
+});
+
 /*============================================================================================
     # Scrolling Animation
 ============================================================================================*/
