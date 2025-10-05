@@ -1,6 +1,6 @@
 # Wedding Invitation Card Design
 
-This repository contains my custom design for a wedding invitation card - a beautiful, interactive web-based invitation.
+This repository contains my custom design for a wedding invitation card - a beautiful, interactive web-based invitation that is inspired by jemputan.me.
 
 ## ☕ Support
 
