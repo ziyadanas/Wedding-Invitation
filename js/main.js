@@ -413,3 +413,22 @@ if (closeButton) {
 const kehadiranBtn = document.getElementById("kehadiran-btn");
 
 
+/** =====================================================
+ *  Footer animation
+  ======================================================= */
+let lastScrollY = window.scrollY;
+const footer = document.getElementById('main-footer');
+
+window.addEventListener('scroll', function () {
+    if (!footer) return;
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        footer.style.transform = 'translateY(100%)';
+        footer.style.transition = 'transform 0.4s';
+    } else {
+        // Scrolling up
+        footer.style.transform = 'translateY(0)';
+        footer.style.transition = 'transform 0.4s';
+    }
+    lastScrollY = window.scrollY;
+});

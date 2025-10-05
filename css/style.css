@@ -271,9 +271,10 @@ body {
 .card {
     display: none;
     max-width: 420px;
+    max-height: auto;
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background: red;
+    background-color: #3F2D43;
     border-radius: 3px;
     font-size: 14px;
     line-height: 16px;
@@ -296,18 +297,8 @@ section {
     padding-bottom: 0;
 }
 
-/*============================================================================================
-    # Card-Main
-============================================================================================*/
-.card .main {
-    background-color: #3F2D43;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.card .main::before,
-.card .main::after {
+.card::before,
+.card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -317,11 +308,11 @@ section {
     z-index: 1;
 }
 
-.card .main::before {
+.card::before {
     left: 7%;
 }
 
-.card .main::after {
+.card::after {
     left: 93%;
 }
 
@@ -333,7 +324,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 0;
+    height: auto;
     z-index: 50;
 }
 
@@ -374,11 +365,6 @@ section {
 
 }
 
-.card section.intro .content .date {
-    letter-spacing: 2px;
-    font-size: 14px;
-}
-
 
 
 
@@ -392,8 +378,7 @@ section {
     justify-content: center;  /* Center vertically (if you want) */
     padding: 0;
     gap: 0;
-    min-height: 0 !important;
-    max-height: 500vh !important;
+    height: auto;
     text-align: center;       /* Center text inside block elements */
 }
 
@@ -410,6 +395,7 @@ section {
     text-align: center;
     position: relative;
     z-index: 500;
+    padding-bottom: 10%;
 }
 
 /*
@@ -499,6 +485,7 @@ section {
     gap: 30px;
     z-index: 500;
     position: relative;
+    padding: 10%;
 }
 
 .card section.info .aturcara p {
@@ -724,6 +711,10 @@ section {
     bottom: 0;
     left: 0;
     z-index: 1000;
+}
+
+#main-footer {
+    will-change: transform;
 }
 
 .footer ul.menu {
