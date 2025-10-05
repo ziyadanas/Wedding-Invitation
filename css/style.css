@@ -269,13 +269,14 @@ body {
 ============================================================================================*/
 .petal-container {
     position: absolute;
-    z-index: 10;
+    z-index: 1000;
     width: 100%;
     /* Full width within the card */
     height: 100%;
     /* Full height within the card */
     top: 0;
     left: 0;
+    pointer-events: none; /* Allow clicking through petals */
 }
 
 .petal {
@@ -288,6 +289,8 @@ body {
     opacity: 0.5;
     animation: fall 10s linear;
     /* Animation duration */
+    pointer-events: none; /* Allow clicking through petals */
+    z-index: 1001; /* Ensure petals are above all content */
 }
 
 @keyframes fall {
@@ -339,8 +342,7 @@ section {
     padding-bottom: 0;
 }
 
-.card section.intro::before,
-.card section.info::before {
+.card section:not(.footer)::before {
     content: "";
     position: absolute;
     top: 20px;
