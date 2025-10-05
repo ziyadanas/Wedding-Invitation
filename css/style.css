@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script:wght@400&display=swap');
 
+/* iOS-specific viewport fixes */
+@supports (-webkit-touch-callout: none) {
+    .wrapper {
+        min-height: -webkit-fill-available;
+    }
+    .card {
+        min-height: -webkit-fill-available;
+    }
+}
 
 /* General Global Setting */
 * {
@@ -34,7 +43,10 @@ body {
 .wrapper {
     display: flex;
     width: 100%;
+    min-height: 100vh;
     min-height: 100dvh;
+    /* iOS safe area support */
+    min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -276,7 +288,10 @@ body {
 .card {
     display: none;
     max-width: 420px;
+    min-height: 100vh;
     min-height: 100dvh;
+    /* iOS-specific height fix */
+    min-height: -webkit-fill-available;
     max-height: auto;
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -371,11 +386,15 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;      /* Center horizontally */
-    justify-content: center;  /* Center vertically (if you want) */
+    justify-content: flex-start;  /* Changed from center to flex-start */
     padding: 0;
     gap: 0;
     height: auto;
+    min-height: auto;         /* Prevent forced height on iOS */
     text-align: center;       /* Center text inside block elements */
+    /* iOS-specific fixes */
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0); /* Force hardware acceleration */
 }
 
 .card section.info .assalamualaikum {
