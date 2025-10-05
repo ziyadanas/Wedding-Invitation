@@ -281,11 +281,13 @@ body {
     position: relative;
     overflow: hidden;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 2s ease;
 }
 
 .card.visible {
     opacity: 1;
+    pointer-events: auto;
 }
 
 section {
@@ -320,7 +322,6 @@ section {
     # Intro
 ============================================================================================*/
 .card section.intro {
-    background-color: #3F2D43;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
