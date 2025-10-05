@@ -1,7 +1,7 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura:wght@400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes:wght@400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script:wght@400&display=swap');
 
 
 /* General Global Setting */
@@ -134,10 +134,15 @@ body {
 .overlay .overlay-content .toggle-button p {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
-    font-family: "Great Vibes", cursive;
+    font-family: "Rouge Script", cursive;
     color: #F7D4C6;
+    /* iOS text rendering improvements */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent text clipping on iOS */
+    overflow: visible;
 }
 
 .overlay .overlay-content .toggle-button .buka {
@@ -340,12 +345,19 @@ section {
 
 .card section.intro .content h2 {
     font-family: 'Rouge Script', 'Great Vibes', 'Allura', cursive, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 4rem;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #F7D4C4;
-
+    /* iOS font rendering improvements */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Simple fallback bold effect for maximum iOS compatibility */
+    text-shadow: 1px 0 0 #F7D4C4, -1px 0 0 #F7D4C4, 0 1px 0 #F7D4C4, 0 -1px 0 #F7D4C4;
+    font-synthesis: weight;
+    /* Fallback for older iOS versions */
+    -webkit-text-stroke: 0.5px #F7D4C4;
 }
 
 
@@ -420,12 +432,18 @@ section {
 
 .card section.info .event-info .one .parent p {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Rouge Script', sans-serif;
     letter-spacing: 0px;
     padding-bottom: 6px;
     line-height: 2rem;
     color: #F7D4C6;
+    /* iOS font rendering improvements */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Bold effect for iOS compatibility */
+    text-shadow: 0.5px 0 0 #F7D4C6, -0.5px 0 0 #F7D4C6, 0 0.5px 0 #F7D4C6, 0 -0.5px 0 #F7D4C6;
+    font-synthesis: none;
 }
 
 .card section.info .event-info .two {
@@ -438,12 +456,18 @@ section {
 
 .card section.info .event-info .two p {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Rouge Script', sans-serif;
     letter-spacing: 0px;
     padding-bottom: 6px;
     line-height: 2rem;
     color: #F7D4C6;
+    /* iOS font rendering improvements */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Bold effect for iOS compatibility */
+    text-shadow: 0.5px 0 0 #F7D4C6, -0.5px 0 0 #F7D4C6, 0 0.5px 0 #F7D4C6, 0 -0.5px 0 #F7D4C6;
+    font-synthesis: none;
 }
 
 .card section.info .event-info .three .title,
