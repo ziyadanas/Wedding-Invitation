@@ -167,9 +167,9 @@ body {
 .overlay .overlay-content .toggle-button p {
     margin: 0;
     padding: 0;
-    font-size: 28px;
-    font-weight: 500;
-    font-family: "Rouge Script", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Allura", cursive;
     color: #F7D4C6;
     /* iOS text rendering improvements */
     -webkit-font-smoothing: antialiased;
@@ -438,6 +438,7 @@ section {
     z-index: 500;
     display: block;
     margin: 0 auto;           /* Center horizontally */
+    margin-bottom: 20px;
 }
 
 .card section.info .event-info {
@@ -471,7 +472,7 @@ section {
 .card section.info .event-info .four p,
 .card section.info .event-info .five p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
     line-height: 1.5;      /* Added line spacing */
 }
@@ -491,12 +492,10 @@ section {
 }
 
 .card section.info .event-info .one .parent p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    font-family: 'Rouge Script', sans-serif;
-    letter-spacing: 0px;
-    padding-bottom: 6px;
-    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     color: #F7D4C6;
     /* iOS font rendering improvements */
     -webkit-font-smoothing: antialiased;
@@ -521,11 +520,10 @@ section {
 }
 
 .card section.info .event-info .two p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    font-family: 'Rouge Script', sans-serif;
+    font-family: 'Allura', sans-serif;
     letter-spacing: 0px;
-    padding-bottom: 6px;
     line-height: 2rem;
     color: #F7D4C6;
     /* iOS font rendering improvements */
@@ -550,6 +548,14 @@ section {
     margin-bottom: 10px;
 }
 
+.card section.info .event-info .two img {
+    width: 70%;
+    height: auto;
+    margin: auto auto;
+    display: block;
+    padding-bottom: 9px;
+    padding-top: 3px;
+}
 /*============================================================================================
     # Aturcara
 ============================================================================================*/
