@@ -199,7 +199,7 @@ const event = {
     title: "Jemputan Kenduri Kahwin Ziyad & Nurkhalifah",
     startDate: "20251206T030000Z", // YYYYMMDDTHHmmssZ (UTC)
     endDate: "20251206T080000Z",
-    location: "No.1 Persiaran A, Jalan Lapangan Terbang Subang, 47200 Subang, Selangor",
+    location: "Jalan Gajah 21, Kampung Kubu Gajah, 47000 Shah Alam, Selangor",
     description: "Kami menjemput tuan/puan hadir ke majlis perkahwinan anakanda kami.",
 };
 
@@ -267,16 +267,16 @@ function addAppleCalendar() {
  *  Location for Google and Waze
   ======================================================= */
 function openGoogleMaps() {
-    const latitude = 3.1300228970618424;  // Example latitude
-    const longitude = 101.56759499571224;  // Example longitude
+    const latitude =  3.2012938386673118;  // Example latitude
+    const longitude = 101.51222724004478;  // Example longitude
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}&travelmode=driving`;
 
     window.open(googleMapsUrl, "_blank");  // Open in a new tab
 }
 
 function openWaze() {
-    const latitude = 3.1300228970618424;  // Example latitude
-    const longitude = 101.56759499571224;  // Example longitude
+    const latitude =  3.2012938386673118;  // Example latitude
+    const longitude = 101.51222724004478;  // Example longitude
     const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
 
     window.open(wazeUrl, "_blank");  // Open in a new tab
