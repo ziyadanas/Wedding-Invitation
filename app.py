@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 
-wedding_invitation = Flask(__name__, template_folder='.')
+app = Flask(__name__)
 
-@wedding_invitation.route("/")
+@app.route("/")
 def home():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    wedding_invitation.run(debug=True)
+    app.run(debug=True)
