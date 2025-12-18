@@ -1,1 +1,4 @@
 .vscode/settings.json
+passenger_wsgi.py
+tmp
+public
