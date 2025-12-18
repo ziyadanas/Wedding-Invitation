@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
     <!-- Css Vendor -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/jquery.countdown.css') }}"/>
     <title>Jemputan Kahwin</title>
     <meta property="og:title" content="Jemputan Kahwin">
     <meta property="og:description" content="Jemputan Kahwin Ziyad & Nurkhalifah">
@@ -35,9 +35,9 @@
         <div class="petal-container"></div>
         <!-- Intro Section -->
         <section class="intro" style="margin:0;padding:0;">
-            <img src="./images/top_flower.svg" alt="" style="position: relative;z-index: 9;">
+            <img src="{{ url_for('static', filename = 'images/top_flower.svg') }}" alt="" style="position: relative;z-index: 9;">
             <div class="content">
-                <img src="./images/ziyad&nurkhalifah.svg" alt="Ziyad & Nurkhalifah" class="logo fade-top-1" style="width:70%;height:auto;">
+                <img src="{{ url_for('static', filename = 'images/ziyad&nurkhalifah.svg') }}" alt="Ziyad & Nurkhalifah" class="logo fade-top-1" style="width:70%;height:auto;">
                 <ul class="fade-top-4" id="countdown" >
                     <li><span class="days">00</span><p class="days_text">Hari</p></li>
                     <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
@@ -45,13 +45,13 @@
                     <li><span class="seconds">00</span><p class="seconds_text">Saat</p></li>
                 </ul>
             </div>
-            <img src="./images/bottom_flower.svg" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;margin-bottom: -1px;">
+            <img src="{{ url_for('static', filename = 'images/bottom_flower.svg') }}" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;margin-bottom: -1px;">
         </section>
 
         <!-- Event Info Section -->
         <section class="info" style="margin:0;padding:0;">
-            <img src="./images/bottom_flower.svg" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;transform: scaleY(-1);margin-top: -1px;">
-            <img src="./images/assalamualaikum.svg" alt="" class="assalamualaikum reveal fade-bottom" style="width:70%;height:auto;padding-top: 10%;">
+            <img src="{{ url_for('static', filename = 'images/bottom_flower.svg') }}" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;transform: scaleY(-1);margin-top: -1px;">
+            <img src="{{ url_for('static', filename = 'images/assalamualaikum.svg') }}" alt="" class="assalamualaikum reveal fade-bottom" style="width:70%;height:auto;padding-top: 10%;">
             <div class="event-info reveal fade-bottom">
                 <div class="one">
                     <p>Dengan penuh kesyukuran, kami</p>
@@ -65,7 +65,7 @@
                     <p>Putera Kami Dengan Pasangannya</p>
                 </div>
                 <div class="two">
-                    <img src="./images/ziyad&nurkhalifah2.svg" alt="Ziyad & Nurkhalifah">
+                    <img src="{{ url_for('static', filename = 'images/ziyad&nurkhalifah2.svg') }}" alt="Ziyad & Nurkhalifah">
                 </div>
                 <div class="three">
                     <p class="title">TEMPAT</p>
@@ -80,12 +80,12 @@
                     <p>Bersamaan 15 Jamadil Akhir 1447H</p>
                 </div>
             </div>
-            <img src="./images/top_flower.svg" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;transform: scaleY(-1);margin-bottom: -1px;">
+            <img src="{{ url_for('static', filename = 'images/top_flower.svg') }}" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;transform: scaleY(-1);margin-bottom: -1px;">
         </section>
 
         <section class="info" style="margin:0;padding:0;">
             <!-- Aturcara -->
-            <img src="./images/top_flower.svg" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;margin-top: -1px;">
+            <img src="{{ url_for('static', filename = 'images/top_flower.svg') }}" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;margin-top: -1px;">
             <div class="aturcara reveal fade-bottom">
                 <p class="title">aturcara majlis</p>
                 <div class="one">
@@ -101,7 +101,7 @@
                     <p>4:00 Petang</p>
                 </div>
             </div>
-            <img src="./images/bottom_flower.svg" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;">
+            <img src="{{ url_for('static', filename = 'images/bottom_flower.svg') }}" alt="" style="position: relative;z-index: 9;margin:0;padding:0;display:block;border:none;">
         </section>
 
         <!--
@@ -175,7 +175,7 @@
             <p>(Piano Cover by Riyandi Kusuma)</p>
             <audio id="audio-player" controls autoplay loop>
                 <source type="audio/mp3"
-                    src="./music/thousand_years_piano.mp3">
+                    src="{{ url_for('static', filename='music/thousand_years_piano.mp3')  }}">
             </audio>
         </div>
     </div>
@@ -242,9 +242,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Custom Js -->
-    <script src="./js/main.js"></script>
-    <script src="./js/public-typeit-script-min.js"></script>
-    <script src="./js/jquery.countdown.js"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/public-typeit-script-min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/jquery.countdown.js') }}"></script>
     <script>
         new TypeIt('.typeit-typewriter', {
             html: true,
